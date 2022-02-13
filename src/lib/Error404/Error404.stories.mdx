@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Error404 from './Error404';
+
+<Meta title="Example/Error404" component={Error404} />
+
+# Example Component Demo
+
+## Error404 props
+<Props of={Error404} />
+
+## Description
+
+`Error404` component provides user a classic 404 error page.
+
+## Demo
+
+<Canvas>
+    <Story name="Erreur-404">
+    <Error404 status="404" title="404" subTitle="Sorry, the page you visited does not exist."/>
+  </Story>
+  <Story name="Erreur-500">
+    <Error404 status="500" title="500" subTitle="Sorry, something went wrong."/>
+  </Story>
+</Canvas>

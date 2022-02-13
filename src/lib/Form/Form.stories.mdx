@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Form from './Form';
+
+<Meta title="Example/Form" component={Form} />
+
+# Example Component Demo
+
+## Form props
+<Props of={Form} />
+
+## Description
+
+`Form` component provides user basic interface to a basic Form.
+
+## Demo
+
+<Canvas>
+  <Story name="Form-submit-primary">
+    <Form type="primary"/>
+  </Story>
+  <Story name="Form-submit-default">
+    <Form type="default"/>
+  </Story>
+</Canvas>

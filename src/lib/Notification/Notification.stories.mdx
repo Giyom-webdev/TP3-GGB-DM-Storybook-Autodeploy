@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Notification from './Notification';
+
+<Meta title="Example/Notification" component={Notification} />
+
+# Example Component Demo
+
+## Notification props
+<Props of={Notification} />
+
+## Description
+
+`Notification` component provides user basic interface for a notification box.
+
+## Demo
+
+<Canvas>
+  <Story name="Notification-button-primary">
+    <Notification type="primary"/>
+  </Story>
+    <Story name="Notification-button-default">
+    <Notification type="default"/>
+  </Story>
+</Canvas>

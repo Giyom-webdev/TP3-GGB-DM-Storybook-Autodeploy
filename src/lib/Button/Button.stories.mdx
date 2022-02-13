@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Button from './Button';
+
+<Meta title="Example/Button" component={Button} />
+
+# Example Component Demo
+
+## Button props
+<Props of={Button} />
+
+## Description
+
+`Button` component provides a simple button interface.
+
+## Demo
+
+<Canvas>
+    <Story name="Bouton-primaire">
+    <Button size="default" type="primary"/>
+  </Story>
+  <Story name="Bouton-Large">
+    <Button size="large" type="primary"/>
+  </Story>
+</Canvas>

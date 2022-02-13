@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Card from './Card';
+
+<Meta title="Example/Card" component={Card} />
+
+# Example Component Demo
+
+## Card props
+<Props of={Card} />
+
+## Description
+
+`Card` component provides user basic interface for a default size and small size card.
+
+## Demo
+
+<Canvas>
+    <Story name="Carte-default">
+    <Card size="default"/>
+  </Story>
+  <Story name="Carte-small">
+    <Card size="small"/>
+  </Story>
+</Canvas>

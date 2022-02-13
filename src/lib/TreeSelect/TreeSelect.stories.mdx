@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import TreeSelect from './TreeSelect';
+
+<Meta title="Example/TreeSelect" component={TreeSelect} />
+
+# Example Component Demo
+
+## TreeSelect props
+<Props of={TreeSelect} />
+
+## Description
+
+`TreeSelect` component provides user basic interface to select from multiple options.
+
+## Demo
+
+<Canvas>
+  <Story name="Example TreeSelect1">
+    <TreeSelect/>
+  </Story>
+    <Story name="Example TreeSelect2">
+    <TreeSelect focus/>
+  </Story>
+</Canvas>

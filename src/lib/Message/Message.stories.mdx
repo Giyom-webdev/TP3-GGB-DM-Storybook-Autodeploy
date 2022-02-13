@@ -1,0 +1,24 @@
+import { Meta, Props, Canvas, Story } from '@storybook/addon-docs';
+import Message from './Message';
+
+<Meta title="Example/Message" component={Message} />
+
+# Example Component Demo
+
+## Message props
+<Props of={Message} />
+
+## Description
+
+`Message` component provides user basic interface for a message (success, error or warning).
+
+## Demo
+
+<Canvas>
+  <Story name="Message-Duree-normale">
+    <Message />
+  </Story>
+    <Story name="Message-Duree-longue">
+    <Message top={top*3}/>
+  </Story>
+</Canvas>
