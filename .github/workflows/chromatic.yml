@@ -1,3 +1,12 @@
+# .github/workflows/chromatic.yml
+
+# Workflow name
+name: 'Chromatic'
+
+# Event for the workflow
+on: push
+
+# List of jobs
 jobs:
   chromatic-deployment:
     steps:
@@ -7,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0 # 👈 Required to retrieve git history
       - name: Install dependencies
-        run: yarn
+        run: npm
         # 👇 Adds Chromatic as a step in the workflow
       - name: Publish to Chromatic
         uses: chromaui/action@v1

@@ -22,7 +22,7 @@
     "start:docs": "start-storybook -p 6006 -s public",
     "build:docs": "build-storybook -s public",
     "prepare": "husky install",
-    "chromatic": "npx chromatic --project-token=5ba819b8458c"
+    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "eslintConfig": {
     "extends": "react-app"
