@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - main
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name:  Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: Sync file
+      uses: Giyom-webdev/TP3-GGB-DM-Storybook-Autodeploy
+      with:
+        server: ftp.dmorel.devwebgarneau.com
+        username: dmorel
+        protocol: ftps
+        password: ${{ secrets.ftp_password }}
+         port: 21
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
