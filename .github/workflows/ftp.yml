@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - main
+on: push
 name: Deploy website on push
 jobs:
   web-deploy:
@@ -12,10 +9,9 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Sync file
-      uses: Giyom-webdev/TP3-GGB-DM-Storybook-Autodeploy
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
         server: ftp.dmorel.devwebgarneau.com
         username: dmorel
         protocol: ftps
         password: ${{ secrets.ftp_password }}
-        port: 21
