@@ -8,10 +8,10 @@ on: push
 
 # List of jobs
 jobs:
-  web-deploy:
-    name:  Deploy
-    runs-on: ubuntu-latest
   chromatic-deployment:
+    # Operating System
+    runs-on: ubuntu-latest
+    # Job steps
     steps:
         # 👇 Version 2 of the action
       - name: Checkout repository
