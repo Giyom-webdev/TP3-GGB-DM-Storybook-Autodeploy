@@ -18,8 +18,4 @@ jobs:
         username: dmorel
         protocol: ftps
         password: ${{ secrets.ftp_password }}
-         port: 21
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
+        port: 21
