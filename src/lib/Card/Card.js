@@ -5,7 +5,7 @@ import classes from './Card.module.css';
 
 const card = ({size}) => (
   <Card
-    title="Exemple de carte"
+    title="Exemple de carte TEST"
     extra={<a href="#">More</a>}
     style={{width: 300}}
     size={size}>
