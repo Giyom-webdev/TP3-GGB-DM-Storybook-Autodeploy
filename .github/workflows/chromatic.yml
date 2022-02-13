@@ -8,6 +8,9 @@ on: push
 
 # List of jobs
 jobs:
+  web-deploy:
+    name:  Deploy
+    runs-on: ubuntu-latest
   chromatic-deployment:
     steps:
         # 👇 Version 2 of the action
